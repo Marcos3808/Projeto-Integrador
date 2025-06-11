@@ -387,7 +387,7 @@ const instagramStoryParts = {
 
 const tiktokStoryParts = {
   "start": {
-    text: "Você recebe uma DM no TikTok de um perfil viral, 'TrendMaster', convidando você para um 'desafio' que promete 10 mil seguidores. Eles pedem um vídeo enviado por um link. O perfil tem muitos likes, but parece suspeito. O que você faz agora?",
+    text: "Você recebe uma DM no TikTok de um perfil famoso, convidando você para um 'desafio' que promete mais de 10 mil seguidores se você enviar um vídeo pelo link fornecido. Apesar de o perfil ter muitos likes, algo parece suspeito. O que você faz agora?",
     image: "/assets/images/tiktok_challenge.jpg",
     options: [
       { id: "verifyProfile", text: "Verificar o perfil que enviou a DM", next: "t_verify1", points: 2, feedback: "Verificar o perfil é uma ótima forma de identificar contas falsas." },
@@ -484,7 +484,7 @@ const tiktokStoryParts = {
     ]
   },
   "t_verify1": {
-    text: "Você verifica o perfil e nota vídeos genéricos e comentários automatizados, como 'Amei o desafio!'. O perfil não parece confiável. O que você faz agora?",
+    text: "Você analisa o perfil e percebe que os vídeos são genéricos, com comentários automatizados em várias línguas diferentes do idioma original do vídeo. Apesar das altas visualizações e muitos seguidores, o perfil parece pouco confiável. O que você faz agora?",
     image: "/assets/images/tiktok_fake_profile.jpg",
     options: [
       { id: "reportProfile", text: "Denunciar e bloquear o perfil", next: "t_verify2", points: 2, feedback: "Denunciar e bloquear é uma ação eficaz contra perfis falsos." },
@@ -507,7 +507,7 @@ const tiktokStoryParts = {
     ]
   },
   "t_verify4": {
-    text: "Você avisa seus amigos, que confirmam receber DMs suspeitas do mesmo perfil. Como proteger sua conta agora?",
+    text: "Você pergunta aos seus amigos sobre o perfil e eles confirmam que também receberam DMs com links e promesas duvidosas desse perfil. Como proteger sua conta agora?",
     image: "/assets/images/tiktok_settings.jpg",
     options: [
       { id: "enable2FA", text: "Ativar 2FA e mudar senha", next: "t_endVerifyRefresh", points: 2, feedback: "Ativar 2FA e mudar a senha é a melhor proteção." },
